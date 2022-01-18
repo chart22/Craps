@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Die
+comment0.text=\n\ Die\ class\ for\ craps\ assignment.\n\n\ @author\ Charlotte\ Hart\n\ @version\ 01/11/22\n
+comment1.params=
+comment1.target=Die()
+comment2.params=
+comment2.target=int\ rollDie()
+comment3.params=
+comment3.target=int\ getDie()
+numComments=4
