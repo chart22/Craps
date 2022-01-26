@@ -77,3 +77,30 @@ public class Craps
        System.out.println("Thanks for playing!");
    }
 }
+
+/*
+
+COMMENTS FROM THE INSTRUCTOR:
+
+This is a pretty good-looking little program, Charlotte, and it has lots of the
+features that were part of the assignment. Nicely done, there!
+
+There are a couple of issues that I discovered. One is that your version of the
+game doesn't follow the rules for the "subsequent rolls", for which a roll of 7 
+will make you lose. After the first roll, you get to *keep* rolling, over and 
+over, until 1) you make the point and win, or 2) you roll a 7 and lose.
+
+I've fixed that for you up above, and included it as part of the commit. Take
+a look at that and compare it with the original version of your program if you 
+want to see the difference.
+
+The other issue (a minor one), is that your program doesn't accept "default
+values" as described in the project handout. That feature makes the program much
+more usable.
+
+Overall, not bad!
+
+SCORE: 47/50
+
+*/
+
