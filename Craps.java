@@ -51,23 +51,31 @@ public class Craps
            {
                // here we have the user roll again, anad then check to see if they matched their point.
                int point = rollTotal;
-               System.out.println();
-               System.out.println("Your point is " + point);
-               System.out.println("Press [Enter] to roll the dice.");
-               in.nextLine();
-               roll1 = d1.rollDie();
-               roll2 = d2.rollDie();
-               rollTotal = roll1 + roll2;
-               System.out.println("You rolled a " + roll1 + " and a " + roll2);
-               System.out.println("...for a total of " + rollTotal);
-               if (rollTotal  == point)
+               rollTotal = 0;   // seed value to enter loop
+               while (rollTotal != point && rollTotal != 7)
                {
-                   System.out.println("You matched your point. You win!");
-               }
-               else
-               {
-                   System.out.println("You didn't match your point. You lose!");
-               }
+                   System.out.println();
+                   System.out.println("Your point is " + point);
+                   System.out.println("Press [Enter] to roll the dice.");
+                   in.nextLine();
+                   roll1 = d1.rollDie();
+                   roll2 = d2.rollDie();
+                   rollTotal = roll1 + roll2;
+                   System.out.println("You rolled a " + roll1 + " and a " + roll2);
+                   System.out.println("...for a total of " + rollTotal);
+                   if (rollTotal  == point)
+                   {
+                       System.out.println("You matched your point. You win!");
+                   }
+                   else if (rollTotal == 7)
+                   {
+                       System.out.println("You rolled a 7. You lose!");
+                   }
+                   else
+                   {
+                       System.out.println("Keep rolling...");
+                   }
+                }
            }
            System.out.println();
            System.out.print("Would you like to play again (y/n)?");
